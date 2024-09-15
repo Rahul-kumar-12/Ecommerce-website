@@ -10,7 +10,7 @@ const path = require('path')
 const app = express()
 app.use(cors({
     // origin: process.env.FRONTEND_URL,
-    origin: 'https://e-commerce-mbnu.onrender.com',
+    origin: 'https://ecommerce-website-f4o2.onrender.com',
     credentials: true
 }))
 app.use(express.json())
