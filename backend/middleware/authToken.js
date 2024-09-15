@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-
+ const JWT_SECRET="secret"
 async function authToken(req, res, next) {
     try {
         const token = req.cookies?.token
@@ -13,7 +13,7 @@ async function authToken(req, res, next) {
             })
         }
 
-        jwt.verify(token, process.env.JWT_SECRET, function (err, decoded) {
+        jwt.verify(token, JWT_SECRET, function (err, decoded) {
             console.log(err)
             console.log("decoded", decoded)
 
