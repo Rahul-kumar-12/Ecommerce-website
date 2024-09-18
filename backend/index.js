@@ -34,3 +34,5 @@ connectDB().then(() => {
         console.log(`Server is running localhost: ${PORT}`)
     })
 })
+
+// .this is index File.apply........
