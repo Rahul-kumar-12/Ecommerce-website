@@ -28,21 +28,6 @@ if (process.env.NODE_ENV === "production") {
     })
 }
 
-
-// app.use(express.static(path.join(__dirname, 'frontend', 'build')));
-
-// // Serve the frontend application for all other routes
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
-// });
-
-
-
-
-
-
-
-
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log("connnect to DB")
